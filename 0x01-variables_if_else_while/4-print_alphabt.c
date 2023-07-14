@@ -1,27 +1,23 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - C programm entry point
-  * Return: Always zero (0)on sucess
+ * main - C program entry point
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char a = 'a';
+	char low, e, q;
 
-	while (a <= 'z')
+	e = 'e';
+	q = 'q';
+
+	for (low = 'a'; low <= 'z'; low++)
 	{
-		putchar(a);
-		a++;
+		if (low != e && low != q)
+			putchar(low);
 	}
+		printf("\n");
 
-	a = 'A';
-
-	while (a <= 'Z')
-	{
-		putchar(a);
-		a++;
-	}
-
-	putchar('\n');
 	return (0);
 }
