@@ -1,11 +1,11 @@
 #include "main.h"
-/**
- * main-program entry point
- * 
- * Return-Always zero(0)
- */
-int main(void)
 
+/**
+ *  * main - Start process
+ *   * Return: Always 0
+ */
+
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
