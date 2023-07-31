@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
-/* print_diagsums - Print diagonal sum.
+/**
+ *  * print_diagsums - Print diagonal sum.
  *   * @a: an array of pointers of integers
  *    * @size: array size
  */
