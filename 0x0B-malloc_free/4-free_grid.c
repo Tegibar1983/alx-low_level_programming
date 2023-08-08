@@ -1,18 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-/**
- * free_grid - frees a 2D grid previously created
- * @grid: input pointer to grid or 2D array
- * @height: height of 2D arrray
- * Return: void
+#include <stdlib.h>
+#include <stdio.h>
+
+/*
+ * free_grid - function than freed memory
+ * @grid: input pointer for the 2D array
+ * @height: 2D arrray height
+ * Return: void pointer
  */
 void free_grid(int **grid, int height)
 {
-int i;
+int a;
 
-for (i = 0; i < height; i++)
-free(grid[i]);
+for (a = 0; a < height; a++)
+free(grid[a]);
 free(grid);
 }
-
