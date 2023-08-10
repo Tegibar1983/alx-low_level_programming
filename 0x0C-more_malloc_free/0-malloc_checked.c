@@ -1,22 +1,18 @@
-#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <limits.h>
-
+#include "main.h"
 /**
- * malloc_checked - function that returns pointer
- * @b: input argument size
- * Return: pointer or NULL on failor
+ * malloc_checked - return pointer
+ * @b: input argument
+ * Return: pointeror NULL
  */
-
 void *malloc_checked(unsigned int b)
 {
-int *n;
-if (n == NULL)
+void *m;
+
+m = malloc(b);
+
+if (m == NULL)
 exit(98);
-
-n = (int *)malloc(b);
-
-return (n);
-
+return (m);
 }
