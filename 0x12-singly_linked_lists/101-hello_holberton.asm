@@ -1,4 +1,3 @@
-/*** only allowed to use printf function for this project ***/
 extern printf
 
 section .text
